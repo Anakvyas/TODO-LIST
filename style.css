@@ -1,0 +1,106 @@
+
+body, h1, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 110px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 500px) {
+    div {
+        padding: 15px;
+    }
+
+    input {
+        width: calc(100% - 100px);
+        margin-right: 5px;
+    }
+
+    button {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    li button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
